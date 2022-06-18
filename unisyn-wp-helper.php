@@ -22,7 +22,7 @@ if (!class_exists('UniSynWPHelper')) {
 
     /* Auto Load Hooks */
     public function __construct() {
-      add_action( 'init', array($this, ', PHP_INT_MAX') );
+      add_action( 'init', array($this, 'editor_manage_users') );
 
       add_filter('upload_mimes', array($this, 'mime_types'), 1, 1);
 
